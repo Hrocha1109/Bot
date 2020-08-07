@@ -111,20 +111,3 @@ bot.on('message', msg => {
     }
 })
 
-bot.on('message', msg =>{
-    var sorte = msg.content.split()[7]
-    if(!msg.author.bot){
-        return;
-    }
-    switch(sorte){
-        case sorte > 1 && sorte <= 10: msg.channel.send('CARALHO');
-    
-    break;
-        case sorte = 1: msg.channel.send('CRITICO!!!!');
-    break;
-        case sorte > 85 && sorte !=100: msg.channel.send('Puts...');
-     break;
-        case sorte = 100: msg.channel.send('P U T S')
-
-    }
-})
