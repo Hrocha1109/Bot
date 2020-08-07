@@ -112,7 +112,7 @@ bot.on('message', msg => {
 })
 
 bot.on('message', msg =>{
-    var sorte = Math.floor(Math.random() * 10)+1;
+    var sorte = Math.floor(Math.random() * 20)+1;
     if(!msg.author.bot){
         return;
     }
@@ -121,6 +121,8 @@ bot.on('message', msg =>{
     
     break;
         case sorte = 6: msg.channel.send('<@572301609305112596> Você quer sair algum dias desses :point_right: :point_left:');
+    break;
+        case sorte = 11: msg.channel.send('Se eu sou só um conjunto de linhas de código, qual é o meu gênero?');
     break;
     }
 })
