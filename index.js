@@ -112,7 +112,7 @@ bot.on('message', msg => {
 })
 
 bot.on('message', msg =>{
-    var sorte = msg.content.split('`')
+    var sorte = msg.content.split()[4]
     if(!msg.author.bot){
         return;
     }
