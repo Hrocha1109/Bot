@@ -120,7 +120,7 @@ bot.on('message', msg =>{
         case sorte=1 : msg.channel.send('Eu poderia fazer isso se Hugo não tivesse preguisça');
     
     break;
-        case sorte = 6: msg.channel.send('<@{572301609305112596}> Você quer sair algum dias desses :point_right: :point_left:');
+        case sorte = 6: msg.channel.send('<@572301609305112596> Você quer sair algum dias desses :point_right: :point_left:');
     break;
     }
 })
