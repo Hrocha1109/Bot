@@ -112,19 +112,14 @@ bot.on('message', msg => {
 })
 
 bot.on('message', msg =>{
-    var sorte = Math.floor(Math.random() * 35)+1;
     if(!msg.author.bot){
         return;
     }
+    var sorte = Math.floor(Math.random() * 35)+1;
     switch(sorte){
-        case sorte=1 : msg.channel.send('Eu poderia fazer isso se Hugo não tivesse preguiça');
-    
+        
+        case sorte = 6: msg.channel.send('<@852264389272535082> Você quer sair algum dias desses :point_right: :point_left: :flushed:');
     break;
-        case sorte = 6: msg.channel.send('<@572301609305112596> Você quer sair algum dias desses :point_right: :point_left: :flushed:');
-    break;
-        case sorte = 11: msg.channel.send('Se eu sou só um conjunto de linhas de código, qual é o meu gênero?');
-    break;
-        case sorte = 21: msg.channel.send('Se fosse eu o dado teria sido melhor :sunglasses:');
-    break;
+        
     }
 })
