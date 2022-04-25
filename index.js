@@ -8,8 +8,8 @@ bot.on('ready', () => {
     console.log('Eustou pronto')
 })
 bot.on('message', msg => {
-    if(msg.content.toLowerCase() == "banana"){
-        msg.reply('Mamaco :sunglasses:')
+    if(msg.content.imcludes.toLowerCase() == "banana"){
+        msg.react(":banana:");
     }
 })
 bot.on('message', msg => {
