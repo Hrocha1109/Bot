@@ -8,7 +8,7 @@ bot.on('ready', () => {
     console.log('Eustou pronto')
 })
 bot.on('message', msg => {
-    if(msg.content.toLowerCase().includes == "banana"){
+    if(msg.content.toLowerCase().includes('banana') ){
         msg.react(":banana:");
     }
 })
