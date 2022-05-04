@@ -123,3 +123,20 @@ bot.on('message', msg =>{
         
     }
 })
+
+bot.on('message', msg =>{
+
+    if (msg.content.toLowerCase() === 'thiago'){
+        const loopTime = 5;
+
+for (let i = 0; i < loopTime; i++) {
+    msg.channel.send('@794311776748961852')
+}
+        
+    }
+    
+})
+
+
+
+
