@@ -118,7 +118,7 @@ bot.on('message', msg =>{
     var sorte = Math.floor(Math.random() * 35)+1;
     switch(sorte){
         
-        case sorte = 6: msg.channel.send('<@852264389272535082> Você quer sair algum dias desses :point_right: :point_left: :flushed:');
+        case sorte = 6: msg.channel.send('<@794311776748961852> Você quer sair algum dias desses :point_right: :point_left: :flushed:');
     break;
         
     }
