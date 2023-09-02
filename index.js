@@ -97,8 +97,8 @@ bot.on('message', message => {
 
 bot.on('message', msg => {
     if(msg.content.toLocaleLowerCase().startsWith('bom') || msg.content.toLocaleLowerCase().startsWith('boa') || msg.content.toLocaleLowerCase().startsWith('etion') || msg.content.toLocaleLowerCase().startsWith('aid')){
-        var Bom = msg.content.toLocaleLowerCase().split(' ')[1];
-        switch(Bom){
+        var bom = msg.content.toLocaleLowerCase().split(' ')[1];
+        switch(bom){
             case bom = 'dia': msg.reply('Bom dia!')
             break;
             case bom = 'noite': msg.reply('Boa noite!')
@@ -115,10 +115,10 @@ bot.on('message', msg =>{
     if(!msg.author.bot){
         return;
     }
-    var sorte = Math.floor(Math.random() * 35)+1;
+    var sorte = Math.floor(Math.random() * 70)+1;
     switch(sorte){
         
-        case sorte = 6: msg.channel.send('<@794311776748961852> Você quer sair algum dias desses :point_right: :point_left: :flushed:');
+        case sorte = 6: msg.channel.send('<@852264389272535082> Você quer fazer websexo algum dias desses :point_right: :point_left: :flushed:');
     break;
         
     }
@@ -126,11 +126,11 @@ bot.on('message', msg =>{
 
 bot.on('message', msg =>{
 
-    if (msg.content.toLowerCase() === 'thiago'){
+    if (msg.content.toLowerCase().includes('thiago') ){
         const loopTime = 5;
 
 for (let i = 0; i < loopTime; i++) {
-    msg.channel.send('@794311776748961852')
+    msg.channel.send('<@794311776748961852>')
 }
         
     }
@@ -138,5 +138,38 @@ for (let i = 0; i < loopTime; i++) {
 })
 
 
+bot.on('message', msg =>{
+    if (msg.author.id == "294569739966087168"){
+        
+     var sorte2 = Math.floor(Math.random() * 160)+1;
+    switch(sorte2){  
+      case sorte2 = 6: msg.channel.send({files: ["https://cdn.discordapp.com/attachments/815997110235299880/971536836470132776/6237ac3ca2980.jpeg"]});
+    break;
+
+case sorte2 = 12: msg.channel.send({files: ["http://images3.memedroid.com/images/UPLOADED433/6252d60418578.jpeg"]});
+    break;
+
+    case sorte2 = 24: msg.channel.send({files: ["https://cdn.discordapp.com/attachments/815997110235299880/993336244228603924/FRmV40OWUAIqc4y.jpg"]});
+    break;
+
+    case sorte2 = 48: msg.channel.send({files: ["https://cdn.discordapp.com/attachments/815997110235299880/993337035916050542/1vsuksy6hcq81.webp"]});
+    break;
+        
+    }
+        
+    }
+})
+
+bot.on('message', msg => {
+    if(msg.content.toLowerCase() == "conquista"){
+        msg.reply('<@275724333698121729>')
+    }
+})
 
 
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('ok');
+});
+server.listen(3000);
