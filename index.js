@@ -166,6 +166,12 @@ bot.on('message', msg => {
     }
 })
 
+const isUpperCase = (str) => /^[A-Z]+$/.test(str);
+bot.on('message', msg => {
+    if(isUpperCase(msg){
+        msg.reply('KEEP YOUR VOICE DOWN')
+    }
+})
 
 const http = require('http');
 const server = http.createServer((req, res) => {
